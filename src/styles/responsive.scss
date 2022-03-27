@@ -1,0 +1,26 @@
+@mixin mobile($orientation: portrait) {
+
+	@if $orientation == portrait {
+		@media only screen
+		and (min-device-width: 300px)
+		and (max-device-width: 1023px)
+		and (orientation: portrait) {
+			@content;
+		}
+	}
+	@if $orientation == landscape {
+		@media only screen
+		and (min-device-width: 300px)
+		and (max-device-width: 1023px)
+		and (orientation: landscape) {
+			@content;
+		}
+  }
+}
+
+@mixin web() {
+  @media only screen
+  and (min-device-width: 1024px) {
+    @content;
+  }
+}

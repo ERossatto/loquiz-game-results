@@ -1,0 +1,50 @@
+@import "/src/styles/variables.scss";
+
+.toggle {
+  z-index: 3;
+  position: fixed;
+
+  width: calc(#{$header-height} - 1rem);
+  height: calc(#{$header-height} - 1rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  background-color: transparent;
+
+  transition: 0.2s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: calc(#{$header-height} / 2);
+    height: 2px;
+    background: $loquiz-grey;
+    transition: 0.2s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 $loquiz-grey;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: calc(#{$header-height} / 2);
+    height: 2px;
+    background: $loquiz-grey;
+    transition: 0.2s;
+    transform: translateY(10px);
+  }
+
+  &--active {
+    &::before {
+      transform: translateY(0px) rotate(45deg);
+      box-shadow: 0 0 0 $loquiz-grey;
+    }
+
+    &::after {
+      transform: translateY(0px) rotate(-45deg);
+    }
+  }
+}
