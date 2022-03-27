@@ -1,5 +1,7 @@
+// Angular
 import { Component, OnInit } from '@angular/core';
 
+// Utils
 import { Toggle } from 'src/shared/material/utils/switches';
 
 @Component({

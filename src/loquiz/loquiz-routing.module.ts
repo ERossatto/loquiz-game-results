@@ -1,5 +1,8 @@
+// Angular
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+// Components
 import { TestScreenComponent } from 'src/content/test-screen/test-screen.component';
 
 const routes: Routes = [
@@ -8,6 +11,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class LoquizRoutingModule { }
+export class LoquizRoutingModule { };

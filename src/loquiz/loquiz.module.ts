@@ -1,8 +1,10 @@
+// Angular
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+// Modules
 import { MaterialModule } from 'src/shared/material/material.module';
 import { LoquizRoutingModule } from './loquiz-routing.module';
 import { HeaderModule } from './header/header.module';
@@ -24,6 +26,8 @@ import { LoquizComponent } from './loquiz.component';
     MenuModule,
   ],
   providers: [],
-  bootstrap: [LoquizComponent]
+  bootstrap: [
+    LoquizComponent,
+  ],
 })
-export class LoquizModule { }
+export class LoquizModule { };
