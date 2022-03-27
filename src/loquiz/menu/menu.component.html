@@ -1,0 +1,20 @@
+<section class="menu">
+
+  <loquiz-menu-toggle
+    class="menu__toogle-button"
+    [toggle]="toggleMenu.status"
+    (onClick)="onToggleClick($event)">
+  </loquiz-menu-toggle>
+
+  <loquiz-menu-dash
+    [toggle]="toggleMenu.status"
+    (onClose)="toggleMenu.hide()">
+  </loquiz-menu-dash>
+
+  <div
+    class="black-bg"
+    *ngIf="toggleMenu.status"
+    (click)="toggleMenu.hide()">
+  </div>
+
+</section>

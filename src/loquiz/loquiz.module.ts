@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from 'src/shared/material/material.module';
-import { HeaderModule } from './header/header.module';
 import { LoquizRoutingModule } from './loquiz-routing.module';
+import { HeaderModule } from './header/header.module';
+import { MenuModule } from './menu/menu.module';
 
 import { LoquizComponent } from './loquiz.component';
 
@@ -20,6 +21,7 @@ import { LoquizComponent } from './loquiz.component';
     BrowserAnimationsModule,
     MaterialModule,
     HeaderModule,
+    MenuModule,
   ],
   providers: [],
   bootstrap: [LoquizComponent]

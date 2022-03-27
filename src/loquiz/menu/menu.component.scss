@@ -1,0 +1,13 @@
+@import "/src/styles/variables.scss";
+
+.menu {
+  z-index: 42;
+  position: fixed;
+  height: 100%;
+
+  &__toogle-button {
+    position: relative;
+    top: -3.55rem;
+    left: 1rem;
+  }
+}

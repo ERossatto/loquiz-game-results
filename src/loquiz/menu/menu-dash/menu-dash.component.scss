@@ -1,0 +1,54 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/responsive.scss";
+
+$width-dash: 25vw;
+$width-dash-mobile: 100vw;
+
+.menu-dash {
+  background: linear-gradient(to right, $loquiz-pink, $loquiz-blue);
+
+  top: -$header-height;
+  position: absolute;
+  width: $width-dash;
+  height: 100vh;
+  left: -$width-dash;
+  transition: .3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include mobile {
+    left: -$width-dash-mobile;
+    width: $width-dash-mobile;
+  }
+
+  @include mobile(landscape) {
+    left: -$width-dash-mobile;
+    width: $width-dash-mobile;
+  }
+
+  &--toogle {
+    left: 0vw;
+    transition: .3s ease;
+  }
+
+  .options {
+    position: relative;
+    top: calc(1rem + #{$header-height});
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+      cursor: pointer;
+      color: $loquiz-grey;
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: .75rem;
+    }
+  }
+}
