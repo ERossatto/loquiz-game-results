@@ -3,8 +3,12 @@
   [ngClass]="{'menu-dash--toogle': toggle}">
 
   <div class="options">
-    <a>text test 1</a>
-    <a>text test 2</a>
+    <a [routerLink]="['/game-results']" (click)="handleOption()">
+      game results
+    </a>
+    <a [routerLink]="['/about-project']" (click)="handleOption()">
+      about project
+    </a>
   </div>
 
 </section>
