@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Utils
-import { Toggle } from 'src/shared/material/utils/switches';
+import { Toggle } from 'src/shared/utils/switches';
 
 @Component({
   selector: 'loquiz-menu',
