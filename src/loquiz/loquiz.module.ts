@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MaterialModule } from 'src/shared/material/material/material.module';
+import { MaterialModule } from 'src/shared/material/material.module';
 import { HeaderModule } from './header/header.module';
 import { LoquizRoutingModule } from './loquiz-routing.module';
 
