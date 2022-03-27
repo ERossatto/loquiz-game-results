@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { LoquizRoutingModule } from './loquiz-routing.module';
+import { LoquizComponent } from './loquiz.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
-    AppComponent
+    LoquizComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    LoquizRoutingModule,
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [LoquizComponent]
 })
-export class AppModule { }
+export class LoquizModule { }
