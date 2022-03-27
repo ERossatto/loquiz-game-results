@@ -14,7 +14,7 @@ import { texts } from '@texts';
 })
 export class AboutProjectComponent implements OnInit {
 
-  public texts = texts.gameResults;
+  public texts = texts.aboutProject;
 
   constructor(
     public ls: LanguageService,

@@ -13,14 +13,14 @@ export const texts = {
   },
   gameResults: {
     textTest: {
-      pt: 'O componente esta funcionando',
-      en: 'The component works',
+      pt: 'O componente "gameResults" esta funcionando',
+      en: 'The component "gameResults" works',
     },
   },
   aboutProject: {
     textTest: {
-      pt: 'O componente esta funcionando',
-      en: 'The component works',
+      pt: 'O componente "aboutProject" esta funcionando',
+      en: 'The component "aboutProject" works',
     },
   },
 };
