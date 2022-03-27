@@ -6,17 +6,17 @@ import { Injectable } from '@angular/core';
 })
 export class LanguageService {
 
-  public language: string;
+  public lang: string;
 
   constructor() {
-    this.setLanguageEN();
+    this.setLangEN();
   };
 
-  public setLanguagePT(): void {
-    this.language = 'pt';
+  public setLangPT(): void {
+    this.lang = 'pt';
   }
 
-  public setLanguageEN(): void {
-    this.language = 'en';
+  public setLangEN(): void {
+    this.lang = 'en';
   }
 }

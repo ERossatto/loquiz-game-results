@@ -4,10 +4,10 @@
 
   <div class="options">
     <a [routerLink]="['/game-results']" (click)="handleOption()">
-      {{ texts.optionList.gameResults[ls.language] }}
+      {{ texts.optionList.gameResults[ls.lang] }}
     </a>
     <a [routerLink]="['/about-project']" (click)="handleOption()">
-      {{ texts.optionList.aboutProject[ls.language] }}
+      {{ texts.optionList.aboutProject[ls.lang] }}
     </a>
   </div>
 
@@ -15,12 +15,12 @@
     <img
       src="../../../assets/images/brazil-flag.png"
       alt="brazil flag"
-      (click)="ls.setLanguagePT()"
+      (click)="ls.setLangPT()"
     >
     <img
       src="../../../assets//images/england-flag.png"
       alt="england flag"
-      (click)="ls.setLanguageEN()"
+      (click)="ls.setLangEN()"
     >
   </div>
 
