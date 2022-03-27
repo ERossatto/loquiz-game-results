@@ -23,4 +23,4 @@ import { AboutProjectComponent } from './about-project/about-project.component';
     MaterialModule,
   ]
 })
-export class ContentModule { }
+export class ContentModule { };
