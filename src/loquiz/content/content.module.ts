@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 
 // Modules
 import { MaterialModule } from 'src/shared/material/material.module';
+import { ContentRoutingModule } from './content.routing.module';
 
 // Components
 import { TestScreenComponent } from './test-screen/test-screen.component';
@@ -18,6 +19,7 @@ import { AboutProjectComponent } from './about-project/about-project.component';
   ],
   imports: [
     CommonModule,
+    ContentRoutingModule,
     MaterialModule,
   ]
 })
