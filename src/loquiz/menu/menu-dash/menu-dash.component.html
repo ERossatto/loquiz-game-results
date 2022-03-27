@@ -4,11 +4,24 @@
 
   <div class="options">
     <a [routerLink]="['/game-results']" (click)="handleOption()">
-      game results
+      {{ texts.optionList.gameResults[ls.language] }}
     </a>
     <a [routerLink]="['/about-project']" (click)="handleOption()">
-      about project
+      {{ texts.optionList.aboutProject[ls.language] }}
     </a>
+  </div>
+
+  <div class="languages">
+    <img
+      src="../../../assets/images/brazil-flag.png"
+      alt="brazil flag"
+      (click)="ls.setLanguagePT()"
+    >
+    <img
+      src="../../../assets//images/england-flag.png"
+      alt="england flag"
+      (click)="ls.setLanguageEN()"
+    >
   </div>
 
 </section>

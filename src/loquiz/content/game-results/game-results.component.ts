@@ -1,4 +1,11 @@
+// Angular
 import { Component, OnInit } from '@angular/core';
+
+// Services
+import { LanguageService } from 'src/shared/services/language.service';
+
+// Utils
+import { texts } from '@texts';
 
 @Component({
   selector: 'loquiz-game-results',
@@ -7,7 +14,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameResultsComponent implements OnInit {
 
-  constructor() { }
+  public texts = texts.gameResults;
+
+  constructor(
+    public ls: LanguageService,
+  ) { }
 
   ngOnInit(): void {
   }
