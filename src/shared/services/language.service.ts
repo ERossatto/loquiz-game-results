@@ -9,7 +9,7 @@ export class LanguageService {
   public language: string;
 
   constructor() {
-    this.setLanguagePT();
+    this.setLanguageEN();
   };
 
   public setLanguagePT(): void {
