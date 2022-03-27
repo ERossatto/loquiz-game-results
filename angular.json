@@ -15,7 +15,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "loquiz",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
