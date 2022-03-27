@@ -46,9 +46,11 @@ $width-dash-mobile: 100vw;
       cursor: pointer;
       color: $loquiz-grey;
       font-family: 'Roboto', sans-serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: bold;
-      margin-bottom: .75rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      text-decoration: none;
     }
   }
 }

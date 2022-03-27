@@ -3,10 +3,17 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Components
-import { TestScreenComponent } from 'src/content/test-screen/test-screen.component';
+import { AboutProjectComponent } from './content/about-project/about-project.component';
+import { GameResultsComponent } from './content/game-results/game-results.component';
 
 const routes: Routes = [
-  { path: '', component: TestScreenComponent }
+  { path: '', pathMatch: 'full', redirectTo: 'game-results'},
+  {
+    path: 'game-results',
+    loadChildren: () => import('./content/content.module').then(m => m.ContentModule)
+  },
+  { path: 'game-results', component: GameResultsComponent },
+  { path: 'about-project', component: AboutProjectComponent },
 ];
 
 @NgModule({
