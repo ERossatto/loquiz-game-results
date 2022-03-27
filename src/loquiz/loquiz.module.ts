@@ -1,18 +1,25 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { LoquizRoutingModule } from './loquiz-routing.module';
-import { LoquizComponent } from './loquiz.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MaterialModule } from 'src/shared/material/material/material.module';
+import { HeaderModule } from './header/header.module';
+import { LoquizRoutingModule } from './loquiz-routing.module';
+
+import { LoquizComponent } from './loquiz.component';
 
 @NgModule({
   declarations: [
-    LoquizComponent
+    LoquizComponent,
   ],
   imports: [
     BrowserModule,
     LoquizRoutingModule,
-    BrowserAnimationsModule
+    CommonModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [LoquizComponent]
