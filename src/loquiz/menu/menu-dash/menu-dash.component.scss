@@ -53,4 +53,18 @@ $width-dash-mobile: 100vw;
       text-decoration: none;
     }
   }
+
+  .languages {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    display: relative;
+    margin-bottom: 1rem;
+
+    img {
+      cursor: pointer;
+      width: 25%;
+      border-radius: $default-border-radius;
+    }
+  }
 }

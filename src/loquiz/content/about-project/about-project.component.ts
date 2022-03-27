@@ -1,4 +1,11 @@
+// Angular
 import { Component, OnInit } from '@angular/core';
+
+// Services
+import { LanguageService } from 'src/shared/services/language.service';
+
+// Utils
+import { texts } from '@texts';
 
 @Component({
   selector: 'loquiz-about-project',
@@ -7,7 +14,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutProjectComponent implements OnInit {
 
-  constructor() { }
+  public texts = texts.aboutProject;
+
+  constructor(
+    public ls: LanguageService,
+  ) { }
 
   ngOnInit(): void {
   }
