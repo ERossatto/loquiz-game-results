@@ -1,6 +1,9 @@
 // Angular
 import { Component, OnInit } from '@angular/core';
 
+// Services
+import { LanguageService } from 'src/shared/services/language.service';
+
 @Component({
   selector: 'loquiz-header',
   templateUrl: './header.component.html',
@@ -8,7 +11,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public ls: LanguageService,
+  ) { }
 
   ngOnInit(): void {
   }

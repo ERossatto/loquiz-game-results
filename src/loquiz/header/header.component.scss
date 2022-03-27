@@ -12,6 +12,10 @@
   width: 100vw;
   height: $header-height;
 
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
@@ -21,6 +25,18 @@
     }
     100% {
       background-position: 0% 50%;
+    }
+  }
+
+  .languages {
+    display: flex;
+    justify-content: space-evenly;
+    display: relative;
+
+    img {
+      cursor: pointer;
+      width: 20%;
+      border-radius: $default-border-radius;
     }
   }
 }
