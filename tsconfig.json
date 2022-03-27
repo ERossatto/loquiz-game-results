@@ -23,7 +23,7 @@
       "dom"
     ],
     "paths": {
-      "@texts": ["./texts.ts"],
+      "@texts": ["./src/texts.ts"],
     }
   },
   "angularCompilerOptions": {
