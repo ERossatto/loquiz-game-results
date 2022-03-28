@@ -17,6 +17,7 @@ import { SubscriptionManager } from 'src/shared/Classes/subscriptionManager.clas
 // Utils
 import { texts } from '@texts';
 import { environment } from 'src/environments/environment';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 @Component({
   selector: 'loquiz-game-results',
@@ -26,8 +27,13 @@ import { environment } from 'src/environments/environment';
 export class GameResultsComponent implements OnInit, OnDestroy {
 
   public texts = texts.gameResults;
+  public env = environment;
 
   private _sub$ = new SubscriptionManager();
+
+  //-----------------
+  public displayedColumns: string[] = ['id', 'name', 'odometer', 'totalScore'];
+  //-----------------
 
   constructor(
     public ls: LanguageService,
@@ -44,16 +50,17 @@ export class GameResultsComponent implements OnInit, OnDestroy {
 
   public startComponent(): void {
     this.game.fillList();
-    this.team.fillList();
+    this.team.fillList(this.game.idSelected);
   }
 
   public game: {
     list: IGame[],
-    selected: IGame,
+    idSelected: string,
     fillList: () => void,
+    onIdSelectedChange: (id: string) => void,
   } = {
     list: [],
-    selected: undefined,
+    idSelected: this.env.loquizApi.GAME_ID_DEFAULT,
 
     fillList: (): void => {
       this._sub$.add(
@@ -77,19 +84,25 @@ export class GameResultsComponent implements OnInit, OnDestroy {
         'game_getList'
       );
     }, // fillList
+
+    onIdSelectedChange: (id: string): void => {
+      this.game.idSelected = id;
+      this.team.fillList(id);
+    }, // setIdSelected
+
   }; // game
 
   public team: {
     list: ITeam[],
     selected: ITeam,
-    fillList: () => void,
+    fillList: (gameId: string) => void,
   } = {
     list: [],
     selected: undefined,
 
-    fillList: (): void => {
+    fillList: (gameId: string): void => {
       this._sub$.add(
-        this.gameService.getTeamListById(environment.loquizApi.GAME_ID_DEFAULT)
+        this.gameService.getTeamListById(gameId)
         .subscribe({
           next: (list) => {
             this.team.list = list['items'].map( (item) => new Team({
