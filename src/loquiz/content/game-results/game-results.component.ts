@@ -10,14 +10,13 @@ import { IGame } from 'src/shared/interfaces/game.interface';
 import { ITeam } from 'src/shared/interfaces/team.interface';
 
 // Classes
-import { Game } from 'src/shared/Classes/game.class';
-import { Team } from 'src/shared/Classes/team.class';
-import { SubscriptionManager } from 'src/shared/Classes/subscriptionManager.class';
+import { Game } from 'src/shared/classes/game.class';
+import { Team } from 'src/shared/classes/team.class';
+import { SubscriptionManager } from 'src/shared/classes/subscriptionManager.class';
 
 // Utils
 import { texts } from '@texts';
 import { environment } from 'src/environments/environment';
-import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 @Component({
   selector: 'loquiz-game-results',
