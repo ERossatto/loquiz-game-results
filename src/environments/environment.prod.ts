@@ -1,7 +1,7 @@
 export const environment = {
   production: true,
   loquizApi: {
-    url: 'https://api.loquiz.com/v3',
+    baseUrl: 'https://api.loquiz.com/v3',
     gamesRoute: '/games',
     gameIdParam: (id: string): string => `/${id}`,
     resultsIdParam: (id: string): string => `/results/${id}/teams`,
