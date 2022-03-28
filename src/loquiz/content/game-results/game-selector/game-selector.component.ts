@@ -1,4 +1,13 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+// Angular
+import {
+  Component,
+  Input,
+  OnInit,
+  Output,
+  EventEmitter
+} from '@angular/core';
+
+// Interfaces
 import { IGame } from 'src/shared/interfaces/game.interface';
 
 @Component({

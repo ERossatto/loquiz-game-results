@@ -30,10 +30,6 @@ export class GameResultsComponent implements OnInit, OnDestroy {
 
   private _sub$ = new SubscriptionManager();
 
-  //-----------------
-  public displayedColumns: string[] = ['id', 'name', 'playTime', 'odometer', 'totalScore'];
-  //-----------------
-
   constructor(
     public ls: LanguageService,
     private gameService: GameService,
@@ -87,8 +83,7 @@ export class GameResultsComponent implements OnInit, OnDestroy {
     onIdSelectedChange: (id: string): void => {
       this.game.idSelected = id;
       this.team.fillList(id);
-    }, // setIdSelected
-
+    }, // onIdSelectedChange
   }; // game
 
   public team: {
