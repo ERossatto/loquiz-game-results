@@ -6,5 +6,6 @@ export interface ITeam {
   finishTime: number;
   isFinished: boolean;
   totalScore: number;
+  playTime?: number;
   getPlayTime?: () => number;
 }

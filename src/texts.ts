@@ -62,9 +62,9 @@ export const texts = {
     }
   },
   aboutProject: {
-    textTest: {
+    textTest: new Languages({
       pt: 'O componente esta funcionando',
       en: 'The component works',
-    },
+    }),
   },
 };

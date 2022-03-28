@@ -70,7 +70,6 @@ export class GameResultsComponent implements OnInit, OnDestroy {
               isPlayable: item.playable,
               timesPlayed: item.timesPlayed,
             }));
-            console.log('game list: ', this.game.list);
           },
           error: (err) => {
             console.error('err: ', err);
@@ -108,7 +107,6 @@ export class GameResultsComponent implements OnInit, OnDestroy {
               isFinished: item.isFinished,
               totalScore: item.totalScore,
             }));
-            console.log('team list: ', this.team.list);
           },
           error: (err) => {
             console.error('err: ', err);

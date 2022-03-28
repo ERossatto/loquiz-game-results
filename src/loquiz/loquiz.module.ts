@@ -11,6 +11,7 @@ import { LoquizRoutingModule } from './loquiz-routing.module';
 import { HeaderModule } from './header/header.module';
 import { MenuModule } from './menu/menu.module';
 
+// Components
 import { LoquizComponent } from './loquiz.component';
 
 @NgModule({
