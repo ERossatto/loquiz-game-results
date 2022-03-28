@@ -1,7 +1,7 @@
 <section class="game-selector">
-  <h4 class="game-selector_title">Game selector</h4>
+  <h4 class="game-selector_title">{{ texts.title[ls.lang] }}</h4>
   <mat-form-field appearance="fill" class="game-selector_form-field">
-    <mat-label>Select a game</mat-label>
+    <mat-label>{{ texts.selectGame[ls.lang] }}</mat-label>
     <mat-select [(value)]="gameIdSelected" (selectionChange)="gameIdChange.emit(gameIdSelected)">
       <mat-option *ngFor="let game of gameList" [value]="game.id">
         {{ game.title }}

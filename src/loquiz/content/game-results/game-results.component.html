@@ -1,22 +1,14 @@
 <section>
-  <p align="center">{{ texts.textTest[ls.lang] }}</p>
 
-  <!-- screen loading -->
-  <!-- screen loading -->
-
-  <!-- game-title-selector-component -->
   <loquiz-game-selector
     [gameList]="game.list"
     [gameIdSelected]="game.idSelected"
     (gameIdChange)="game.onIdSelectedChange($event)"
   ></loquiz-game-selector>
-  <!-- game-title-selector-component -->
 
-  <!-- team-info -->
   <loquiz-teams-info
     [teamList]="team.list"
   ></loquiz-teams-info>
-  <!-- team-info -->
 
 </section>
 
