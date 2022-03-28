@@ -5,20 +5,11 @@
   <!-- screen loading -->
 
   <!-- game-title-selector-component -->
-  <!-- Input gameList: IGame[]-->
-  <!-- Input gameIdSelected -->
-  <!-- Output gameIdChange($event): EventEmmiter<string> -->
-  <div class="game-selector">
-    <h4 class="game-selector_title">Game selector</h4>
-    <mat-form-field appearance="fill" class="game-selector_form-field">
-      <mat-label>Select a game</mat-label>
-      <mat-select [(value)]="game.idSelected" (selectionChange)="game.onIdSelectedChange(game.idSelected)">
-        <mat-option *ngFor="let game of game.list" [value]="game.id">
-          {{ game.title }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
+  <loquiz-game-selector
+    [gameList]="game.list"
+    [gameIdSelected]="game.idSelected"
+    (gameIdChange)="game.onIdSelectedChange($event)"
+  ></loquiz-game-selector>
   <!-- game-title-selector-component -->
 
   <!-- team-info -->

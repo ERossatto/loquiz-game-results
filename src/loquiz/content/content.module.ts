@@ -9,11 +9,13 @@ import { ContentRoutingModule } from './content.routing.module';
 // Components
 import { GameResultsComponent } from './game-results/game-results.component';
 import { AboutProjectComponent } from './about-project/about-project.component';
+import { GameSelectorComponent } from './game-results/game-selector/game-selector.component';
 
 @NgModule({
   declarations: [
     GameResultsComponent,
     AboutProjectComponent,
+    GameSelectorComponent,
   ],
   imports: [
     CommonModule,

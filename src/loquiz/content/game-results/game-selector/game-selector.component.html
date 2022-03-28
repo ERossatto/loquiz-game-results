@@ -1,0 +1,11 @@
+<section class="game-selector">
+  <h4 class="game-selector_title">Game selector</h4>
+  <mat-form-field appearance="fill" class="game-selector_form-field">
+    <mat-label>Select a game</mat-label>
+    <mat-select [(value)]="gameIdSelected" (selectionChange)="gameIdChange.emit(gameIdSelected)">
+      <mat-option *ngFor="let game of gameList" [value]="game.id">
+        {{ game.title }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</section>
