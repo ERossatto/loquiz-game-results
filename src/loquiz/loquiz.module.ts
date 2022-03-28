@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
 
 // Modules
 import { MaterialModule } from 'src/shared/material/material.module';
@@ -24,6 +25,7 @@ import { LoquizComponent } from './loquiz.component';
     MaterialModule,
     HeaderModule,
     MenuModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [
