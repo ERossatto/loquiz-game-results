@@ -31,7 +31,7 @@ export class GameResultsComponent implements OnInit, OnDestroy {
   private _sub$ = new SubscriptionManager();
 
   //-----------------
-  public displayedColumns: string[] = ['id', 'name', 'odometer', 'totalScore'];
+  public displayedColumns: string[] = ['id', 'name', 'playTime', 'odometer', 'totalScore'];
   //-----------------
 
   constructor(

@@ -1,4 +1,5 @@
 import { ITeam } from "../interfaces/team.interface";
+import LoquizDate from "../utils/loquiz-date";
 
 export class Team implements ITeam {
 
@@ -9,6 +10,7 @@ export class Team implements ITeam {
   public finishTime: number;
   public isFinished: boolean;
   public totalScore: number;
+  public playTime: number;
 
   constructor(data: ITeam) {
     this.id = data.id;
@@ -18,9 +20,12 @@ export class Team implements ITeam {
     this.finishTime = data.finishTime;
     this.isFinished = data.isFinished;
     this.totalScore = data.totalScore;
+    this.playTime = this.getPlayTime();
   }
 
   public getPlayTime(): number {
-    return 0;
+    const date = new LoquizDate();
+
+    return date.getMinutesDiff(this.startTime, this.finishTime);
   }
 }
