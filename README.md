@@ -18,7 +18,8 @@ It loads a specific game by default and you can change the game from the drop do
 ## Run it locally
 First of all `cd` to the diretory where you downloaded/cloned the project then install its dependecies `npm install`
 
-Now you'll be ready to go. Run you development server with `ng serve`. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Now you'll be ready to go. Run you development server with `ng serve`. Navigate to `http://localhost:4200/`. 
+The app will automatically reload if you change any of the source files.
 
 ## Build
 
@@ -33,10 +34,10 @@ Now that you already checked you application and saw that its all perfect and ru
 Make sure you got your [firebase account](https://console.firebase.google.com/) 
 Config your project with firebase.
 
-`firebase login`
-`firebase init`
-hosting automatic deploy with git hub
-merge into branch main
+-`firebase login`
+-`firebase init`
+-hosting automatic deploy with git hub
+-merge into branch main
 
 # Limitations and Improvements
 - Not suitable for mobile - This display game results is still not suitable for mobile users
