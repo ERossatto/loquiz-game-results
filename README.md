@@ -32,12 +32,11 @@ If desired so you can check the running production ready application with `ng se
 
 Now that you already checked you application and saw that its all perfect and running, you can deploy it to firebase. 
 Make sure you got your [firebase account](https://console.firebase.google.com/) 
-Config your project with firebase.
-
--`firebase login`
--`firebase init`
--hosting automatic deploy with git hub
--merge into branch main
+Config your project with firebase:
+- `firebase login`
+- `firebase init`
+- hosting automatic deploy with git hub
+- merge into branch main
 
 # Limitations and Improvements
 - Not suitable for mobile - This display game results is still not suitable for mobile users
